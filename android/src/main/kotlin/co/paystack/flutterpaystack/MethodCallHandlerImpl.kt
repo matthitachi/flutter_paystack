@@ -29,11 +29,13 @@ class MethodCallHandlerImpl(messenger: BinaryMessenger?, private val activity: A
                 result.success("androidsdk_$deviceId")
             }
             "getUserAgent" -> {
-                result.success("Android_" + Build.VERSION.SDK_INT + "_Paystack_" + BuildConfig.VERSION_NAME)
+                //result.success("Android_" + Build.VERSION.SDK_INT + "_Paystack_" + BuildConfig.VERSION_NAME)
+	        result.success("Android_" + "29" + "_Paystack_" + "1.0.0" )
             }
 
             "getVersionCode" -> {
-                result.success(BuildConfig.VERSION_CODE.toString())
+                //result.success(BuildConfig.VERSION_CODE.toString())
+	       result.success("1")
             }
 
             "getAuthorization" -> {
